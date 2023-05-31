@@ -146,7 +146,7 @@ Both of these functions reveal whether a GitHub PAT is discovered and provide in
 
 This step is something you do once. Or, rather, once per machine, per PAT. From this point on, `usethis` and its dependencies should be able to automatically retrieve and use this PAT.
 
-## Getting started with GitHub
+## Getting started with GitHub {.unnumbered}
 
 Generally speaking a user is provided 3 workflows for working with GitHub. 
 
