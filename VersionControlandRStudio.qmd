@@ -211,13 +211,13 @@ Look at others’ projects on GitHub, to see what they do and what sort of commi
 
 Don’t include files that are derived from other files in the repository. 
 
-For example, for this quarto book, I wouldn’t include all the .log, .dvi, .aux, etc., files. And if I have R code to generate a figure, I’ll include the R code but not the figure.
+For example, for this quarto book, I wouldn’t include all the .quarto, _book, etc., files. And if I have R code to generate a figure, I’ll include the R code but not the figure.
 
 Be careful about committing binary files, or really big files. Git works best with text files (like source code), as you can see just the lines that were changed. A new copy of a file will get added to the repository every time you change it. For small text files, that’s no big deal; for big images, you’ll get a bloated repository.
 
 And once you’ve committed a big file to your repository, it’s there forever, even if you use git rm to remove it later.
 
-For big data files that are changing, you’ll want to track a text-based version (not .xls!), and you may want to make a fully separate git repository for the data.
+For big data files that are changing, you’ll want to track a text-based version (not .xls!), and you may want to make a fully separate git repository for the data.[@github_guide]
 
 ### Using .gitignore
 
