@@ -423,10 +423,10 @@ div.csl-indent {
 <section id="what-to-commit" class="level3" data-number="3.10.2">
 <h3 data-number="3.10.2" class="anchored" data-anchor-id="what-to-commit"><span class="header-section-number">3.10.2</span> What to commit?</h3>
 <p>Don’t include files that are derived from other files in the repository.</p>
-<p>For example, for this quarto book, I wouldn’t include all the .log, .dvi, .aux, etc., files. And if I have R code to generate a figure, I’ll include the R code but not the figure.</p>
+<p>For example, for this quarto book, I wouldn’t include all the .quarto, _book, etc., files. And if I have R code to generate a figure, I’ll include the R code but not the figure.</p>
 <p>Be careful about committing binary files, or really big files. Git works best with text files (like source code), as you can see just the lines that were changed. A new copy of a file will get added to the repository every time you change it. For small text files, that’s no big deal; for big images, you’ll get a bloated repository.</p>
 <p>And once you’ve committed a big file to your repository, it’s there forever, even if you use git rm to remove it later.</p>
-<p>For big data files that are changing, you’ll want to track a text-based version (not .xls!), and you may want to make a fully separate git repository for the data.</p>
+<p>For big data files that are changing, you’ll want to track a text-based version (not .xls!), and you may want to make a fully separate git repository for the data.<span class="citation" data-cites="github_guide">(<a href="references.html#ref-github_guide" role="doc-biblioref">Broman 2021</a>)</span></p>
 </section>
 <section id="using-.gitignore" class="level3" data-number="3.10.3">
 <h3 data-number="3.10.3" class="anchored" data-anchor-id="using-.gitignore"><span class="header-section-number">3.10.3</span> Using .gitignore</h3>
@@ -482,6 +482,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-github_guide" class="csl-entry" role="doc-biblioentry">
+Broman, Karl. 2021. <em>Git/Github Guide: Karl’s Minimal Tutorial</em>. <a href="https://kbroman.org/github_tutorial">https://kbroman.org/github_tutorial</a>.
+</div>
 <div id="ref-software_carpentry" class="csl-entry" role="doc-biblioentry">
 (eds), Ivan Gonzalez; Daisie Huang; Nima Hejazi; Katherine Koziar; Madicken Munk. 2019. <em>Software Carpentry: Version Control with Git.</em> <a href="https://github.com/swcarpentry/git-novice">https://github.com/swcarpentry/git-novice</a>.
 </div>
