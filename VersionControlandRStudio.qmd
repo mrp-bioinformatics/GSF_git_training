@@ -78,7 +78,7 @@ Click big green button "Create repository."
 
 Copy the HTTPS clone URL to your clipboard via the green "Clone or Download" button.
 
-## Connecting Rstudio to GitHub
+## Connecting Rstudio to GitHub {.unnumbered}
 
 Here we verify that RStudio can issue Git commands on your behalf. This means you'll be able to pull from and push to GitHub from RStudio.
 
