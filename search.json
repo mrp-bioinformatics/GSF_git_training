@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Enhancing Research Reproducibility and Collaboration with RStudio, Git, and GitHub",
+    "section": "",
+    "text": "Preface\nWelcome to the Malaria Research Program at The University of Maryland Baltimore - Center for Vaccine Development and Global Health https://www.medschool.umaryland.edu/malaria/.\nThese training materials are developed and made publicly available for increasing awareness of reproducible science and enhancing data and programming skills.\nmrp-bioinformatics/MRP_git_training is licensed under the Creative Commons Zero v1.0 Universal"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Enhancing Research Reproducibility and Collaboration with RStudio, Git, and GitHub",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nGit and Github lessons adapt material from:\n\nHappy Git with R\n\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books. (Allaire 2022)\n\n\n\n\nAllaire, JJ. 2022. Quarto: R Interface to ’Quarto’ Markdown Publishing System. https://CRAN.R-project.org/package=quarto."
+  },
+  {
+    "objectID": "RBasics.html#learning-objectives",
+    "href": "RBasics.html#learning-objectives",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.1 Learning Objectives",
+    "text": "1.1 Learning Objectives\n\nNavigate RStudio\nUse Posit Cloud (formerly RStudio Cloud)"
+  },
+  {
+    "objectID": "RBasics.html#why-learn-r",
+    "href": "RBasics.html#why-learn-r",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.2 Why learn R?",
+    "text": "1.2 Why learn R?\n\nR is free, open-source, and cross-platform. Anyone can inspect the source code to see how R works. Because of this transparency, there is less chance for mistakes, and if you (or someone else) find some, you can report and fix bugs. Because R is open source and is supported by a large community of developers and users, there is a very large selection of third-party add-on packages which are freely available to extend R’s native capabilities.\nR code is great for reproducibility. Reproducibility is when someone else (including your future self) can obtain the same results from the same dataset when using the same analysis. R integrates with other tools to generate manuscripts from your code. If you collect more data, or fix a mistake in your dataset, the figures and the statistical tests in your manuscript are updated automatically.\nR relies on a series of written commands, not on remembering a succession of pointing and clicking. If you want to redo your analysis because you collected more data, you don’t have to remember which button you clicked in which order to obtain your results; you just have to run your script again.\nR is interdisciplinary and extensible With 10,000+ packages that can be installed to extend its capabilities, R provides a framework that allows you to combine statistical approaches from many scientific disciplines to best suit the analytical framework you need to analyze your data. For instance, R has packages for image analysis, GIS, time series, population genetics, and a lot more.\nR works on data of all shapes and sizes. The skills you learn with R scale easily with the size of your dataset. Whether your dataset has hundreds or millions of lines, it won’t make much difference to you. R is designed for data analysis. It comes with special data structures and data types that make handling of missing data and statistical factors convenient. R can connect to spreadsheets, databases, and many other data formats, on your computer or on the web.\nR produces high-quality graphics. The plotting functionalities in R are endless, and allow you to adjust any aspect of your graph to convey most effectively the message from your data.\nR has a large and welcoming community. Thousands of people use R daily. Many of them are willing to help you through mailing lists and websites such as Stack Overflow, or on the RStudio community. Questions which are backed up with short, reproducible code snippets are more likely to attract knowledgeable responses."
+  },
+  {
+    "objectID": "RBasics.html#starting-out-in-r",
+    "href": "RBasics.html#starting-out-in-r",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.3 Starting out in R",
+    "text": "1.3 Starting out in R\nR is both a programming language and an interactive environment for data exploration and statistics.(R Core Team 2022)\nWorking with R is primarily text-based. The basic mode of use for R is that the user provides commands in the R language and then R computes and displays the result.\n\n1.3.1 Downloading, Installing and Running R\nDownload\nR can be downloaded from CRAN (The Comprehensive R Archive Network) for Windows, Linux, or Mac.\nInstall\nInstallation of R is like most software packages and you will be guided. Should you have any issues or need help you can refer to R Installation and Administration\nRunning\nR can be launched from your software or applications launcher or When working at a command line on UNIX or Windows, the command R can be used for starting the main R program in the form R\nYou will see a console similar to this appear:\n\n\n\n\n\n\n\n\n\nWhile it is possible to work solely through the console or using a command line interface, the ideal environment to work in R is RStudio.\n\n\n1.3.2 RStudio\nRStudio is a user interface for working with R. It is called an Integrated Development Environment (IDE): a piece of software that provides tools to make programming easier. RStudio acts as a sort of wrapper around the R language. You can use R without RStudio, but it’s much more limiting. RStudio makes it easier to import datasets, create and write scripts, and makes using R much more effective. RStudio is also free and open source. To function correctly, RStudio needs R and therefore both need to be installed on your computer. For this training we’ll be using a browser based version called Posit Cloud (see directions in the Posit Cloud section below.\nRStudio interface is conveniently organized into four divisions called “panes”.\nThe Default Layout is:\n\nTop Left - Source: your scripts and documents\nBottom Left - Console: what R would look and be like without RStudio\nTop Right - Environment/History: look here to see what you have done\nBottom Right - Files and more: see the contents of the project/working directory here, like your Script.R file\n\n\n\n\n\n\n\n\n\n\nThe placement of these panes and their content can be customized (see menu, Tools -> Global Options -> Pane Layout)\n\n\n1.3.3 Posit Cloud (formerly RStudio Cloud)\nPosit Cloud is a web browser-based version of RStudio. It will allow you to use RStudio without needing to download anything to your computer. You can also easily share your R projects with others. To use Posit Cloud a user account is required. While we recommend downloading RStudio for routine R programming use, we will be using Posit Cloud for this training.\nTo access Posit Cloud\n\nIn a new browser window or tab create your account at https://posit.cloud/plans/free.\nLog in with Goolge or GitHub or however you choose!\nCreate a new project.\nWrite amazing code!"
+  },
+  {
+    "objectID": "RBasics.html#using-this-book",
+    "href": "RBasics.html#using-this-book",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.4 Using this book",
+    "text": "1.4 Using this book\nFor these instructions code will appear in the gray box as follows:\nfake code\nTo run the code you can copy and paste the code and run it in your RStudio session console at the prompt > which looks like a greater than symbol.\n> fake code\nThe code can also be added to an R Script to be run.\nWhen the code is run in RStudio the console prints out results like so:\n[1] Result\nIn this tutorial results from code will appear like so:\n## [1] Result"
+  },
+  {
+    "objectID": "RBasics.html#working-in-the-console",
+    "href": "RBasics.html#working-in-the-console",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.5 Working in the Console",
+    "text": "1.5 Working in the Console\nThe console is an interactive environment for RStudio, click on the “Console” pane, type 3 + 3 and press enter. R displays the result of the calculation.\n\n3 + 3\n\n[1] 6\n\n\n+ is called an operator. R has the operators you would expect for for basic mathematics:\nArithmetic operators\n\n\n\noperator\nmeaning\n\n\n\n\n+\nplus\n\n\n-\nminus\n\n\n*\ntimes\n\n\n/\ndivided by\n\n\n^\nexponent\n\n\n\nLogical Operators\n\n\n\noperator\nmeaning\n\n\n\n\n==\nexactly equal\n\n\n!=\nnot equal to\n\n\n<\nless than\n\n\n<=\nless than or equal to\n\n\n>\ngreater than\n\n\n>=\ngreater than or equal to\n\n\nx|y\nx or y\n\n\nx&y\nx and y\n\n\n!x\nnot x\n\n\n\nSpaces can be used to make code easier to read.\n\n2 * 2 == 4\n\n[1] TRUE\n\n\nYou can also run commands in the consile for working with your computers filesystem.\n\ngetwd() # similar to UNIX PWD"
+  },
+  {
+    "objectID": "RBasics.html#working-in-the-terminal",
+    "href": "RBasics.html#working-in-the-terminal",
+    "title": "1  Introduction to R and RStudio",
+    "section": "1.6 Working in the Terminal",
+    "text": "1.6 Working in the Terminal\nThe embedded Terminal in RStudio is a command-line interface within the IDE, allowing users to execute system commands and interact with the operating system directly.\n\nIt shares the same working directory as the RStudio session and supports various commands for file management, package installation, and more.\nIntegration into the IDE streamlines workflows by eliminating the need to switch between applications, enhancing productivity and enabling seamless interaction between R programming and system administration tasks.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR Core Team. 2022. R: A Language and Environment for Statistical Computing. Vienna, Austria: R Foundation for Statistical Computing. https://www.R-project.org/."
+  },
+  {
+    "objectID": "ReproducibleProjectManagement.html#learning-objectives",
+    "href": "ReproducibleProjectManagement.html#learning-objectives",
+    "title": "2  Reproducible Project Management",
+    "section": "2.1 Learning Objectives",
+    "text": "2.1 Learning Objectives\n\nWhat are RStudio Projects\nCreating a Posit Cloud project"
+  },
+  {
+    "objectID": "ReproducibleProjectManagement.html#rstudio-projects",
+    "href": "ReproducibleProjectManagement.html#rstudio-projects",
+    "title": "2  Reproducible Project Management",
+    "section": "2.2 RStudio Projects",
+    "text": "2.2 RStudio Projects\nR experts keep all the files associated with a project together. This is such a wise and common practice that RStudio has built-in support for this via Rprojects.\nWhat are they?\n\nRStudio feature enabling users to create self-contained environments for their data analysis and coding projects.\nProvide a dedicated workspace where researchers and developers can organize their R scripts, data files, and related resources, simplifying project management, version control, and collaboration among team members.\nEncapsulate everything within a project, including configurations and dependencies\nBecause of this they promote reproducibility and streamline the development process."
+  },
+  {
+    "objectID": "ReproducibleProjectManagement.html#creating-an-posit-cloud-project",
+    "href": "ReproducibleProjectManagement.html#creating-an-posit-cloud-project",
+    "title": "2  Reproducible Project Management",
+    "section": "2.3 Creating an Posit Cloud project",
+    "text": "2.3 Creating an Posit Cloud project\nPosit Cloud organizes everything into projects automatically.\nLet’s create a new project in Posit Cloud now.\nFirst make sure you are logged in to your Posit Cloud account (or create a free account if you haven’t yet.)\nThen from Your Workspace, select New Project > New RStudio Project.\n\n\n\n\n\nIt will take a moment for your project to launch. Then you can give it a name. Let’s call this Reproducible Project Example. Note that you have a .Rproj in your file pane.\n\n\n\n\n\nWhenever you are in a project, the project is your working directory.\nNow that you have mastered this skill we will switch gears and talk about version control with git and GitHub and how to intergrate them with RStudio projects!"
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#learning-objectives",
+    "href": "VersionControlandRStudio.html#learning-objectives",
+    "title": "3  Version Control and RStudio",
+    "section": "3.1 Learning Objectives",
+    "text": "3.1 Learning Objectives\n\nWhat is version control\nWhat is GitHub\nHow to set up a remote repository on GitHub\nConnecting Rstudio to GitHub\nCreate a personal access token for pushing changes to GitHub\nWhat is a commit\nPush changes to a remote repository\nHow to delete a repository\nUse a template to create a repository on GitHub"
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#why-git",
+    "href": "VersionControlandRStudio.html#why-git",
+    "title": "3  Version Control and RStudio",
+    "section": "3.2 Why Git?",
+    "text": "3.2 Why Git?\nGit is a version control system. Its original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word on a raw vegan diet taking wheat grass and pomegranate shots 3 times a day.\nGit has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#whats-github",
+    "href": "VersionControlandRStudio.html#whats-github",
+    "title": "3  Version Control and RStudio",
+    "section": "3.3 What’s GitHub?",
+    "text": "3.3 What’s GitHub?\nGitHub, Bitbucket, and GitLab are online services that provide a home for your Git-based projects on the internet. If you have no idea what I’m talking about, think of them as DropBox but much, much better. The remote host acts as a distribution channel or clearinghouse for your Git-managed project. It allows other people to see your stuff, sync up with you, and perhaps even make changes. These hosting providers improve upon traditional Unix Git servers with well-designed web-based interfaces.\nEven for private solo projects, it’s a good idea to push your work to a remote location for peace of mind. Why? Because it’s fairly easy to screw up your local Git repository, especially when you’re new at this. The good news is that often only the Git infrastructure is borked up. Your files are just fine! Which makes your Git pickle all the more frustrating. There are official Git solutions to these problems, but they might require expertise and patience you can’t access at 3a.m. If you’ve recently pushed your work to GitHub, it’s easy to grab a fresh copy, patch things up with the changes that only exist locally, and get on with your life. Don’t get too caught up on public versus private at this point. There are many ways to get private repositories from the major providers for low or no cost. Just get started and figure out if and how Git/GitHub is going to work for you!\nWe will not be covering all the in’s and outs of version control with Git, GitHub and all the resources to be found there since our time is limited. Instead you will learn how to:\n\nSet up a remote repository on GitHub\nChecking out a project from a version control remote repository\nConnecting RStudio to GitHub\nSet up a personal access token on GitHub\nMaking some changes, using the Rstudio Git controls and pushing those changes to GitHub"
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#sec-setupRepo",
+    "href": "VersionControlandRStudio.html#sec-setupRepo",
+    "title": "3  Version Control and RStudio",
+    "section": "3.4 Setting up a remote repository on GitHub",
+    "text": "3.4 Setting up a remote repository on GitHub\nFirst thing we do is navigate to GitHub, make sure you’re logged in.\nClick green “New repository” button. Or, if you are on your own profile page, click on “Repositories”, then click the green “New” button.\nHow to fill this in:\n\nRepository name: myrepo (or whatever you wish, we’ll delete this soon anyway).\nDescription: “testing my setup” (or whatever, but some text is good for the README).\nPublic.\nYES Initialize this repository with a README.\nFor everything else, just accept the default.\n\nClick big green button “Create repository.”\nCopy the HTTPS clone URL to your clipboard via the green “Clone or Download” button."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#connecting-rstudio-cloud-to-github",
+    "href": "VersionControlandRStudio.html#connecting-rstudio-cloud-to-github",
+    "title": "3  Version Control and RStudio",
+    "section": "3.5 Connecting Rstudio Cloud to GitHub",
+    "text": "3.5 Connecting Rstudio Cloud to GitHub\nHere we verify that RStudio can issue Git commands on your behalf. This means you’ll be able to pull from and push to GitHub from RStudio."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#checking-out-a-project-from-a-version-control-remote-repository",
+    "href": "VersionControlandRStudio.html#checking-out-a-project-from-a-version-control-remote-repository",
+    "title": "3  Version Control and RStudio",
+    "section": "3.6 Checking out a project from a version control remote repository",
+    "text": "3.6 Checking out a project from a version control remote repository\nPicking up were we left off when Setting up a remote repository copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#clone-the-new-github-repository-to-your-computer-via-rstudio",
+    "href": "VersionControlandRStudio.html#clone-the-new-github-repository-to-your-computer-via-rstudio",
+    "title": "3  Version Control and RStudio",
+    "section": "3.7 Clone the new GitHub repository to your computer via RStudio",
+    "text": "3.7 Clone the new GitHub repository to your computer via RStudio\nIn RStudio Cloud, start a new Project:\n\nRStudioCloud > New Project > New Project from Git Repository. In “Repository URL”, paste the URL of your new GitHub repository. It will be something like this: https://github.com/j-p-courneya/MRP_GitHub_Practice.git.\nAccept the default project directory name, e.g. MRP_GitHub_Practice, which coincides with the GitHub repo name.\nTake charge of – or at least notice! – where the Project will be saved locally. A common rookie mistake is to have no idea where you are saving files or what your working directory is. Pay attention. Be intentional. (if working in local RStudio, not Posit Cloud)\nI suggest you check “Open in new session”, as that’s what you’ll usually do in real life (if working in local RStudio, not Posit Cloud).\nClick “Create Project”.\n\nYou should find yourself in a new local RStudio Project that represents the new test repo we just created on GitHub. This should download the README.md file from GitHub. Look in RStudio’s file browser pane for the README.md file."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#introduce-yourself-to-git",
+    "href": "VersionControlandRStudio.html#introduce-yourself-to-git",
+    "title": "3  Version Control and RStudio",
+    "section": "3.8 Introduce yourself to Git",
+    "text": "3.8 Introduce yourself to Git\nNow we will configure git to talk with GitHub from RStudio.\nThe usethis package (Wickham, Bryan, and Barrett 2022) offers an approach to set your Git user name and email from within R as well as setting up a personal access token. Why does this matter? Because we want to be able to push changes to our remote repository (save what we work on locally, on GitHub).\nTo configure git:\n\n## install if needed (do this exactly once):\ninstall.packages(\"usethis\")\n\nlibrary(usethis)\nuse_git_config(user.name = \"Jane Doe\", user.email = \"jane@example.org\")\n\nCheck what you just did usethis::git_sitrep() generates a git situation-report. It can help you confirm things will work as expected; it can also help you diagnose problems:\n\nlibrary(usethis)\n\nuse_git_config(core.editor = \"nano\")"
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#get-a-personal-access-token-pat",
+    "href": "VersionControlandRStudio.html#get-a-personal-access-token-pat",
+    "title": "3  Version Control and RStudio",
+    "section": "3.9 Get a personal access token (PAT)",
+    "text": "3.9 Get a personal access token (PAT)\n\n3.9.1 Create the PAT\nIn this step you will be creating a PAT. Since GitHub is moving away from username + password to push to their server it will be inevitable that you must set this up to work with GitHub from your local computer and RStudio. To create the token using usethis run:\n\ncreate_github_token()\n\nYou will see running this command takes you to a pre-filled form to create a new PAT. You can get to the same page in the browser by clicking on “Generate new token” from https://github.com/settings/tokens. The advantage of create_github_token() is that the usethis maintainers have pre-selected some recommended scopes, which you can look over and adjust before clicking “Generate token”. It is a very good idea to give the token a descriptive name, because one day you might have multiple PATs, e.g., one that’s configured on your main work computer and another that you use from a secondary computer or VM. Eventually, you’ll need to “spring clean” your PATs and this is much less nerve-wracking if you know which PAT is being used where and for what.\nYou must store this token somewhere, because you’ll never be able to see it again, once you leave this browser window. If you somehow goof this up, just generate a new PAT and, so you don’t confuse yourself, delete the lost token. In the moment, we usually copy the PAT to the clipboard, anticipating what we’ll do next: trigger a prompt that lets us store the PAT in the Git credential store.\n\n\n3.9.2 Put your PAT into the Git credential store\nNext you need to run:\n\ngitcreds::gitcreds_set()\n\nYou will have the gitcreds package installed, as of usethis v2.0.0, because usethis uses gh, and gh uses gitcreds.\nIf you don’t have a PAT stored already, it will prompt you to enter your PAT. Paste!\nIf you do already have a stored credential, gitcreds::gitcreds_set() reveals this and will even let you inspect it. This helps you decide whether to keep the existing credential or replace it. When in doubt, embrace a new, known-to-be-good credential over an old one, of uncertain origins.\nHere are two great ways to check that all is well:\n\ngh::gh_whoami()\n\nusethis::git_sitrep()\n\nBoth of these functions reveal whether a GitHub PAT is discovered and provide information about the associated user, the PAT’s scopes, etc.\nThis step is something you do once. Or, rather, once per machine, per PAT. From this point on, usethis and its dependencies should be able to automatically retrieve and use this PAT."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#making-some-changes-save-commit.",
+    "href": "VersionControlandRStudio.html#making-some-changes-save-commit.",
+    "title": "3  Version Control and RStudio",
+    "section": "3.10 Making some changes, save, commit.",
+    "text": "3.10 Making some changes, save, commit.\nFrom RStudio, modify the README.md file, e.g., by adding the line “This is a line from RStudio”. Save your changes.\nCommit these changes to your local repo. How?\nFrom RStudio:\n\nClick the “Git” tab in upper right pane.\nCheck “Staged” box for README.md.\nIf you’re not already in the Git pop-up, click “Commit”.\nType a message in “Commit message”, such as “Commit from RStudio”.\nClick “Commit”."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#push-your-local-changes-online-to-github",
+    "href": "VersionControlandRStudio.html#push-your-local-changes-online-to-github",
+    "title": "3  Version Control and RStudio",
+    "section": "3.11 Push your local changes online to GitHub",
+    "text": "3.11 Push your local changes online to GitHub\nClick the green “Push” button to send your local changes to GitHub. You should see some message along these lines.\n\n[master dc671f0] blah\n 3 files changed, 22 insertions(+)\n create mode 100644 .gitignore\n create mode 100644 myrepo.Rproj"
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#confirm-the-local-change-propagated-to-the-github-remote",
+    "href": "VersionControlandRStudio.html#confirm-the-local-change-propagated-to-the-github-remote",
+    "title": "3  Version Control and RStudio",
+    "section": "3.12 Confirm the local change propagated to the GitHub remote",
+    "text": "3.12 Confirm the local change propagated to the GitHub remote\nGo back to the browser. I assume we’re still viewing your new GitHub repo.\nRefresh.\nYou should see the new “This is a line from RStudio” in the README.\nIf you click on “commits”, you should see one with the message “Commit from RStudio”.\nIf you have made it this far, you are DONE with set up."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#clean-up",
+    "href": "VersionControlandRStudio.html#clean-up",
+    "title": "3  Version Control and RStudio",
+    "section": "3.13 Clean up",
+    "text": "3.13 Clean up\nAt this point since this was all practice you might be interested in deleting the practice repo. It is also good to learn how to do this for real-life scenarios.\nLocal When you’re ready to clean up, you can delete the local repo any way you like. It’s just a regular directory on your computer.\nGitHub In the browser, go to your repo’s landing page on GitHub. Click on “Settings”.\nScroll down, click on “delete repository,” and do as it asks. GitHub really wants to make sure you definitely want to get rid of the repository."
+  },
+  {
+    "objectID": "VersionControlandRStudio.html#clone-a-template-repository-from-mrp-bioinformatics",
+    "href": "VersionControlandRStudio.html#clone-a-template-repository-from-mrp-bioinformatics",
+    "title": "3  Version Control and RStudio",
+    "section": "3.14 Clone a template repository from MRP-Bioinformatics",
+    "text": "3.14 Clone a template repository from MRP-Bioinformatics\nThe bioinformatics core has set up a organization account on GitHub. A GitHub organization is a shared workspace on the GitHub platform where individuals and teams collaborate on projects, manage repositories, and coordinate their development efforts.\nGitHub organizations have repositories just like personal accounts do. Also for routine structured repositories, like for when youre going to work on a code project, a user can create a “template” repository which can be cloned to a persons user account or to another organization. Lets practice doing that\n\nNavigate to MRP-Bioinformatics organization page https://github.com/mrp-bioinformatics\nUnder repositories look for “new_project_template” and select it\nFeel free to examine its contents clicking around in the files and directories.\nNext we will click “Use this template” and choose “Create a new repository” to clone it to our personal GitHub accounts.\nFill out the form naming the new repository. This is a great point to start from for version controlled projects because you are inheriting an ideal directory structure and creating a repository at the same time instead of starting frorm scratch.\nSelect whether you want a Public or Private repository\nLeave “Include all branches” unchecked\nMash the green button “Create repository from template”\nBask in glory of your amazing GitHub skills!\n\nThis brings us to the conclusion of this training. Stay tuned for more learning opportunities and dont forget to like and subscribe (JK!)\n\n\n\n\nWickham, Hadley, Jennifer Bryan, and Malcolm Barrett. 2022. Usethis: Automate Package and Project Setup."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Allaire, JJ. 2022. Quarto: R Interface to ’Quarto’ Markdown\nPublishing System. https://CRAN.R-project.org/package=quarto.\n\n\nR Core Team. 2022. R: A Language and Environment for Statistical\nComputing. Vienna, Austria: R Foundation for Statistical Computing.\nhttps://www.R-project.org/.\n\n\nWickham, Hadley, Jennifer Bryan, and Malcolm Barrett. 2022. Usethis:\nAutomate Package and Project Setup."
+  }
+]
