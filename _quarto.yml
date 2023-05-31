@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Enhancing Research Reproducibility and Collaboration with RStudio, Git, and GitHub"
+  author: "JP Courneya"
+  date: last-modified
+  date-format: "MMMM, YYYY"
+  chapters:
+    - index.qmd
+    - RBasics.qmd
+    - ReproducibleProjectManagement.qmd
+    - VersionControlandRStudio.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
