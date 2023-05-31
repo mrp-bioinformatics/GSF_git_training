@@ -18,9 +18,9 @@ knitr::include_graphics("images/github-Rstudio.jpg")
 
 ## Why Git?
 
-[Git](https://git-scm.com/) is a version control system. Its original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files -- called a repository -- in a sane, highly structured way. If you have no idea what I'm talking about, think of it as the "Track Changes" features from Microsoft Word on a raw vegan diet taking wheat grass and pomegranate shots 3 times a day.
+[Git](https://git-scm.com/) is a version control system. Its original purpose was to help groups of software developers work collaboratively on big software projects. Git manages the evolution of a set of files -- called a repository -- in a sane, highly structured way. If you have no idea what I'm talking about, think of it as the "Track Changes" features from Microsoft Word but supercharged.
 
-Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
+Version control systems start with a base version of a document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 
 ```{r echo=F}
 knitr::include_graphics("images/play-changes.png")
@@ -32,7 +32,7 @@ Once you think of changes as separate from the document itself, you can then thi
 knitr::include_graphics("images/versions.png")
 ```
 
-Unless multiple users make changes to the same section of the document - a conflict - you can incorporate two sets of changes into the same base document.
+Unless multiple users make changes to the same section of the document - whats known as a conflict - you can incorporate two sets of changes into the same base document.
 
 ```{r echo=F}
 knitr::include_graphics("images/merge.png")
@@ -40,7 +40,7 @@ knitr::include_graphics("images/merge.png")
 
 A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a commit), and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a repository. Repositories can be kept in sync across different computers, facilitating collaboration among different people.
 
-Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.
+Because of its usefulness git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analysis projects, which often consist of data, figures, reports, and, yes, source code.
 
 ## What's GitHub?
 
@@ -146,21 +146,30 @@ Both of these functions reveal whether a GitHub PAT is discovered and provide in
 
 This step is something you do once. Or, rather, once per machine, per PAT. From this point on, `usethis` and its dependencies should be able to automatically retrieve and use this PAT.
 
-## Checking out a project from a version control remote repository
+## Getting started with GitHub
 
-Picking up were we left off when [Setting up a remote repository](#sec-setupRepo) copy the HTTPS clone URL to your clipboard via the green "Clone or Download" button.
+Generally speaking a user is provided 3 workflows for working with GitHub. 
+
+- New project, GitHub first is the easiest way to get a working project.
+
+- Existing project, GitHub first is a deeply pragmatic way to get pre-existing work onto GitHub.
+
+- Existing project, GitHub last is the more proper way to connect existing local work to a remote on GitHub, especially if there’s already a Git history.
+Checking out a project from a version control remote repository
+
+We will cover New project, GitHub first. Picking up were we left off when [Setting up a remote repository](#sec-setupRepo) copy the HTTPS clone URL to your clipboard via the green "Clone or Download" button.
 
 ## Clone the new GitHub repository to your computer via RStudio
 
-In RStudio Cloud, start a new Project:
+In RStudio, start a new Project:
 
--   RStudioCloud \> New Project \> New Project from Git Repository. In "Repository URL", paste the URL of your new GitHub repository. It will be something like this: `https://github.com/j-p-courneya/GSF_GitHub_Practice.git.`
+-   RStudio \> New Project \> New Project from Git Repository. In "Repository URL", paste the URL of your new GitHub repository. It will be something like this: `https://github.com/j-p-courneya/GSF_GitHub_Practice.git.`
 
--   Accept the default project directory name, e.g. MRP_GitHub_Practice, which coincides with the GitHub repo name.
+-   Accept the default project directory name, e.g. GSF_GitHub_Practice, which coincides with the GitHub repo name.
 
--   Take charge of -- or at least notice! -- where the Project will be saved locally. A common rookie mistake is to have no idea where you are saving files or what your working directory is. Pay attention. Be intentional. (if working in local RStudio, not Posit Cloud)
+-   Take charge of -- or at least notice! -- where the Project will be saved locally. A common rookie mistake is to have no idea where you are saving files or what your working directory is. Pay attention. Be intentional.
 
--   I suggest you check "Open in new session", as that's what you'll usually do in real life (if working in local RStudio, not Posit Cloud).
+-   I suggest you check "Open in new session", as that's what you'll usually do in real life.
 
 -   Click "Create Project".
 
@@ -168,7 +177,7 @@ You should find yourself in a new local RStudio Project that represents the new 
 
 ## Making some changes, save, commit.
 
-You can deal with git and github via the command line or a GUI (were using RStudio). The routine use of git involves just a few commands: principally add, commit, and push, but also status and diff. We will use these commands integrated into RStudio as a set of buttons and check boxes.  
+Remember, you can work with git and GitHub via the command line or a GUI (were using RStudio). The routine use of git involves just a few commands: principally add, commit, and push, but also status and diff. We will use these commands integrated into RStudio as a set of buttons and check boxes and dialog boxes.  
 
 From RStudio, modify the `README.md` file, e.g., by adding the line "This is a line from RStudio". Save your changes.
 
@@ -196,7 +205,7 @@ Think of something that needs to be fixed, or a feature to add.
 Do the work.
 Test that it is okay.
 Add and commit.
-Look at others’ projects on github, to see what they do and what sort of commit messages they write.
+Look at others’ projects on GitHub, to see what they do and what sort of commit messages they write.
 
 ### What to commit?
 
