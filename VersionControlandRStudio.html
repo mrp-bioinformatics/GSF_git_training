@@ -220,7 +220,7 @@ div.csl-indent {
   <li><a href="#create-the-pat" id="toc-create-the-pat" class="nav-link" data-scroll-target="#create-the-pat"><span class="toc-section-number">3.7.1</span>  Create the PAT</a></li>
   <li><a href="#put-your-pat-into-the-git-credential-store" id="toc-put-your-pat-into-the-git-credential-store" class="nav-link" data-scroll-target="#put-your-pat-into-the-git-credential-store"><span class="toc-section-number">3.7.2</span>  Put your PAT into the Git credential store</a></li>
   </ul></li>
-  <li><a href="#checking-out-a-project-from-a-version-control-remote-repository" id="toc-checking-out-a-project-from-a-version-control-remote-repository" class="nav-link" data-scroll-target="#checking-out-a-project-from-a-version-control-remote-repository"><span class="toc-section-number">3.8</span>  Checking out a project from a version control remote repository</a></li>
+  <li><a href="#getting-started-with-github" id="toc-getting-started-with-github" class="nav-link" data-scroll-target="#getting-started-with-github"><span class="toc-section-number">3.8</span>  Getting started with GitHub</a></li>
   <li><a href="#clone-the-new-github-repository-to-your-computer-via-rstudio" id="toc-clone-the-new-github-repository-to-your-computer-via-rstudio" class="nav-link" data-scroll-target="#clone-the-new-github-repository-to-your-computer-via-rstudio"><span class="toc-section-number">3.9</span>  Clone the new GitHub repository to your computer via RStudio</a></li>
   <li><a href="#making-some-changes-save-commit." id="toc-making-some-changes-save-commit." class="nav-link" data-scroll-target="#making-some-changes-save-commit."><span class="toc-section-number">3.10</span>  Making some changes, save, commit.</a>
   <ul class="collapse">
@@ -276,8 +276,8 @@ div.csl-indent {
 </section>
 <section id="why-git" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="why-git"><span class="header-section-number">3.2</span> Why Git?</h2>
-<p><a href="https://git-scm.com/">Git</a> is a version control system. Its original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word on a raw vegan diet taking wheat grass and pomegranate shots 3 times a day.</p>
-<p>Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.</p>
+<p><a href="https://git-scm.com/">Git</a> is a version control system. Its original purpose was to help groups of software developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but supercharged.</p>
+<p>Version control systems start with a base version of a document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="images/play-changes.png" class="img-fluid" width="1378"></p>
@@ -289,14 +289,14 @@ div.csl-indent {
 <p><img src="images/versions.png" class="img-fluid" width="667"></p>
 </div>
 </div>
-<p>Unless multiple users make changes to the same section of the document - a conflict - you can incorporate two sets of changes into the same base document.</p>
+<p>Unless multiple users make changes to the same section of the document - whats known as a conflict - you can incorporate two sets of changes into the same base document.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="images/merge.png" class="img-fluid" width="647"></p>
 </div>
 </div>
 <p>A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a commit), and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a repository. Repositories can be kept in sync across different computers, facilitating collaboration among different people.</p>
-<p>Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.</p>
+<p>Because of its usefulness git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analysis projects, which often consist of data, figures, reports, and, yes, source code.</p>
 </section>
 <section id="whats-github" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="whats-github"><span class="header-section-number">3.3</span> What’s GitHub?</h2>
@@ -379,25 +379,31 @@ div.csl-indent {
 <p>This step is something you do once. Or, rather, once per machine, per PAT. From this point on, <code>usethis</code> and its dependencies should be able to automatically retrieve and use this PAT.</p>
 </section>
 </section>
-<section id="checking-out-a-project-from-a-version-control-remote-repository" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="checking-out-a-project-from-a-version-control-remote-repository"><span class="header-section-number">3.8</span> Checking out a project from a version control remote repository</h2>
-<p>Picking up were we left off when <a href="#sec-setupRepo">Setting up a remote repository</a> copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.</p>
+<section id="getting-started-with-github" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="getting-started-with-github"><span class="header-section-number">3.8</span> Getting started with GitHub</h2>
+<p>Generally speaking a user is provided 3 workflows for working with GitHub.</p>
+<ul>
+<li><p>New project, GitHub first is the easiest way to get a working project.</p></li>
+<li><p>Existing project, GitHub first is a deeply pragmatic way to get pre-existing work onto GitHub.</p></li>
+<li><p>Existing project, GitHub last is the more proper way to connect existing local work to a remote on GitHub, especially if there’s already a Git history. Checking out a project from a version control remote repository</p></li>
+</ul>
+<p>We will cover New project, GitHub first. Picking up were we left off when <a href="#sec-setupRepo">Setting up a remote repository</a> copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.</p>
 </section>
 <section id="clone-the-new-github-repository-to-your-computer-via-rstudio" class="level2" data-number="3.9">
 <h2 data-number="3.9" class="anchored" data-anchor-id="clone-the-new-github-repository-to-your-computer-via-rstudio"><span class="header-section-number">3.9</span> Clone the new GitHub repository to your computer via RStudio</h2>
-<p>In RStudio Cloud, start a new Project:</p>
+<p>In RStudio, start a new Project:</p>
 <ul>
-<li><p>RStudioCloud &gt; New Project &gt; New Project from Git Repository. In “Repository URL”, paste the URL of your new GitHub repository. It will be something like this: <code>https://github.com/j-p-courneya/GSF_GitHub_Practice.git.</code></p></li>
-<li><p>Accept the default project directory name, e.g.&nbsp;MRP_GitHub_Practice, which coincides with the GitHub repo name.</p></li>
-<li><p>Take charge of – or at least notice! – where the Project will be saved locally. A common rookie mistake is to have no idea where you are saving files or what your working directory is. Pay attention. Be intentional. (if working in local RStudio, not Posit Cloud)</p></li>
-<li><p>I suggest you check “Open in new session”, as that’s what you’ll usually do in real life (if working in local RStudio, not Posit Cloud).</p></li>
+<li><p>RStudio &gt; New Project &gt; New Project from Git Repository. In “Repository URL”, paste the URL of your new GitHub repository. It will be something like this: <code>https://github.com/j-p-courneya/GSF_GitHub_Practice.git.</code></p></li>
+<li><p>Accept the default project directory name, e.g.&nbsp;GSF_GitHub_Practice, which coincides with the GitHub repo name.</p></li>
+<li><p>Take charge of – or at least notice! – where the Project will be saved locally. A common rookie mistake is to have no idea where you are saving files or what your working directory is. Pay attention. Be intentional.</p></li>
+<li><p>I suggest you check “Open in new session”, as that’s what you’ll usually do in real life.</p></li>
 <li><p>Click “Create Project”.</p></li>
 </ul>
 <p>You should find yourself in a new local RStudio Project that represents the new test repo we just created on GitHub. This should download the README.md file from GitHub. Look in RStudio’s file browser pane for the README.md file.</p>
 </section>
 <section id="making-some-changes-save-commit." class="level2" data-number="3.10">
 <h2 data-number="3.10" class="anchored" data-anchor-id="making-some-changes-save-commit."><span class="header-section-number">3.10</span> Making some changes, save, commit.</h2>
-<p>You can deal with git and github via the command line or a GUI (were using RStudio). The routine use of git involves just a few commands: principally add, commit, and push, but also status and diff. We will use these commands integrated into RStudio as a set of buttons and check boxes.</p>
+<p>Remember, you can work with git and GitHub via the command line or a GUI (were using RStudio). The routine use of git involves just a few commands: principally add, commit, and push, but also status and diff. We will use these commands integrated into RStudio as a set of buttons and check boxes and dialog boxes.</p>
 <p>From RStudio, modify the <code>README.md</code> file, e.g., by adding the line “This is a line from RStudio”. Save your changes.</p>
 <p>Commit these changes to your local repo. How?</p>
 <p>From RStudio:</p>
@@ -412,7 +418,7 @@ div.csl-indent {
 <section id="how-often-to-commit" class="level3" data-number="3.10.1">
 <h3 data-number="3.10.1" class="anchored" data-anchor-id="how-often-to-commit"><span class="header-section-number">3.10.1</span> How often to commit?</h3>
 <p>I prefer to do many small commits, each for a set of related changes:</p>
-<p>Think of something that needs to be fixed, or a feature to add. Do the work. Test that it is okay. Add and commit. Look at others’ projects on github, to see what they do and what sort of commit messages they write.</p>
+<p>Think of something that needs to be fixed, or a feature to add. Do the work. Test that it is okay. Add and commit. Look at others’ projects on GitHub, to see what they do and what sort of commit messages they write.</p>
 </section>
 <section id="what-to-commit" class="level3" data-number="3.10.2">
 <h3 data-number="3.10.2" class="anchored" data-anchor-id="what-to-commit"><span class="header-section-number">3.10.2</span> What to commit?</h3>
