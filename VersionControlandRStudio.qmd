@@ -152,10 +152,10 @@ Generally speaking a user is provided 3 workflows for working with GitHub.
 
 - New project, GitHub first is the easiest way to get a working project.
 
-- Existing project, GitHub first is a deeply pragmatic way to get pre-existing work onto GitHub.
+- Existing project, GitHub first is a deeply pragmatic way to get pre-existing work onto GitHub. You can follow [these](https://happygitwithr.com/existing-github-first.html#existing-github-first) instructions to do this yourself
 
 - Existing project, GitHub last is the more proper way to connect existing local work to a remote on GitHub, especially if there’s already a Git history.
-Checking out a project from a version control remote repository
+Checking out a project from a version control remote repository. You can follow [these](https://happygitwithr.com/existing-github-last.html#existing-github-last) instructions to do this yourself
 
 We will cover New project, GitHub first. Picking up were we left off when [Setting up a remote repository](#sec-setupRepo) copy the HTTPS clone URL to your clipboard via the green "Clone or Download" button.
 
