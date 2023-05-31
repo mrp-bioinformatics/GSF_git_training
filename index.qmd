@@ -4,12 +4,13 @@ Welcome to the Malaria Research Program at The University of Maryland Baltimore 
 
 These training materials are developed and made publicly available for increasing awareness of reproducible science and enhancing data and programming skills.
 
-mrp-bioinformatics/MRP_git_training is licensed under the Creative Commons Zero v1.0 Universal
+mrp-bioinformatics/GSF_git_training is licensed under the Creative Commons Zero v1.0 Universal
 
 ## Acknowledgements
 
 **Git and Github lessons** adapt material from:
 
--   [Happy Git with R](https://happygitwithr.com/)
+- [Happy Git with R](https://happygitwithr.com/)
+- [Software Carpentry git-novice](https://swcarpentry.github.io/git-novice/index.html)
 
 This is a Quarto book. To learn more about Quarto books visit <https://quarto.org/docs/books>. [@quarto]
